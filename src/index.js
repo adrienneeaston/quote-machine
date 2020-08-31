@@ -2,22 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-
-
 class Quote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quote: '',
-      author: ''
+      quote: '"Hello Jay!"',
+      author: '--Adrienne'
     }
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(event) {
     this.setState({
-      quote: 'Hello!',
-      author: 'me'
+      quote: '"Hello Adrienne!"',
+      author: '--Jay'
     });
   }
 
@@ -34,9 +32,7 @@ class Quote extends React.Component {
 }
 
 ReactDOM.render(
-  // <React.StrictMode>
     <Quote />,
-  // </React.StrictMode>,
   document.getElementById('root')
 );
 
