@@ -24,3 +24,39 @@ function App() {
 }
 
 export default App;
+
+// ReactDOM.render(
+//   <Quote />,
+//   document.getElementById('quote-box')
+// );
+
+// class Quote extends React.Component {
+//   constructor(props) {
+//     super(prop);
+//     this.state = {
+//       quote: '',
+//       author: ''
+//     }
+//     this.handleClick = this.handleClick.bind(this);
+//   }
+
+//   handleClick(event) {
+//     this.setState({
+//       quote: 'Hello!',
+//       author: 'me'
+//     });
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <h2 id="text">{this.state.quote}</h2>
+//         <h3 id="author">{this.state.author}</h3>
+//         <button id="new-quote" type="click" onClick={this.handleClick}>New quote</button>
+//         <a id="tweet-quote" href="https://twitter.com/intent/tweet">Tweet quote</a>
+//       </div>
+//     )
+//   }
+// }
+
+// ReactDOMServer.renderToString(<Quote />);
