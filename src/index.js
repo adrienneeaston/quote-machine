@@ -19,14 +19,16 @@ class Quote extends React.Component {
       ['"The best revenge is massive success."', 'Frank Sinatra'],
       ['"The human race has one really effective weapon and that is laughter."', 'Mark Twain'],
       ['"Spoon!"', 'The Tick'],
-      ['"If you’re always trying to be normal you will never know how amazing you can be."', '--Maya Angelou']
+      ['"If you’re always trying to be normal you will never know how amazing you can be."', '--Maya Angelou'],
+      ['"Don\'t believe everything you hear on the internet."', 'Abraham Lincoln']
     ]
-    let randomIndex = Math.floor(Math.random() * 5)
+    let randomIndex = Math.floor(Math.random() * 6)
     this.setState({
       quote: randomQuotes[randomIndex][0],
       author: randomQuotes[randomIndex][1]
       // randomIndex: Math.floor(Math.random() * 5)
     });
+    console.log('indexFirst', randomIndex);
   }
 
   render() {
@@ -40,12 +42,13 @@ class Quote extends React.Component {
     // console.log('index', randomIndex);
     // let answer = randomQuotes[this.state.randomIndex];
     // console.log('type', answer);
+    console.log('indexSecond', randomIndex);
     return (
-      <div className="quote-box">
+      <div id="quote-box">
           <p id="text">{this.state.quote}</p>
           <h2 id="author">{this.state.author}</h2>
           <button id="new-quote" type="click" onClick={this.handleClick}>New quote</button>
-          <a id="new-quote" href="https://twitter.com/intent/tweet">Tweet quote</a>
+          <a id="tweet-quote" href="https://twitter.com/intent/tweet">Tweet quote</a>
       </div>
     );
   }
