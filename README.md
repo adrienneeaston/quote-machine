@@ -5,7 +5,7 @@
 ### Author: Adrienne Easton
 
 ### Links and Resources
-* [Deployed site](https://adrienneeaston.github.io/quote-machine/)
+* [Deployed site](https://romantic-goldberg-26fc8e.netlify.app/)
 
 ### Skills Practiced
 * HTML
