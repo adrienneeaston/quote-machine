@@ -28,7 +28,6 @@ class Quote extends React.Component {
       author: randomQuotes[randomIndex][1]
       // randomIndex: Math.floor(Math.random() * 5)
     });
-    console.log('indexFirst', randomIndex);
   }
 
   render() {
@@ -42,7 +41,6 @@ class Quote extends React.Component {
     // console.log('index', randomIndex);
     // let answer = randomQuotes[this.state.randomIndex];
     // console.log('type', answer);
-    console.log('indexSecond', randomIndex);
     return (
       <div id="quote-box">
           <p id="text">{this.state.quote}</p>
